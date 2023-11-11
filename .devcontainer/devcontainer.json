@@ -1,13 +1,12 @@
 {
-    "name": "LocalStack Setup",
-    "image": "python:3.8",
-    "settings": { 
-        "terminal.integrated.shell.linux": "/bin/bash"
-    },
-    "forwardPorts": [4566],
-    "postCreateCommand": "pip install localstack docker-compose && localstack start",
-    "extensions": [
-        "ms-python.python"
-    ],
-    "remoteUser": "root"
+  "build": {
+    "dockerfile": "Dockerfile.github"
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "README.md"
+      ]
+    }
+  }
 }
