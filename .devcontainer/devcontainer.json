@@ -5,7 +5,7 @@
         "terminal.integrated.shell.linux": "/bin/bash"
     },
     "forwardPorts": [4566],
-    "postCreateCommand": "pip install localstack && localstack start &",
+    "postCreateCommand": "pip install localstack && localstack start",
     "extensions": [
         "ms-python.python"
     ],
